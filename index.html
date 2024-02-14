@@ -31,7 +31,7 @@
                         <p class="text-2xl">Area: <span id="tringle-area"></span>cm<sup>2</sup></p>
                        </div>
                       <div class="card-actions justify-end">
-                        <button onclick="trainglebtn()" class="btn btn-primary w-full">Calculate</button>
+                        <button onclick="tringle()" class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -41,8 +41,11 @@
                       <h2 class="card-title text-center">Rectangle</h2>
                       <p class="text-center">Area (A) = w       I</p>
                       <div>
-                        <input class="w-24 bg-gray-300 text-black text-2xl rounded-sm p-1 pl-2" type="text" placeholder="L"> <span class="mr-4 ml-4">cm</span>
-                        <input class="w-24 bg-gray-300 text-black text-2xl rounded-sm p-1 pl-2" type="text" placeholder="W"> <span class="ml-4">cm</span>
+                        <input id="Rectangle-leanth" class="w-24 bg-gray-300 text-black text-2xl rounded-sm p-1 pl-2" type="text" placeholder="L"> <span class="mr-4 ml-4">cm</span>
+                        <input id="Rectangle-width" class="w-24 bg-gray-300 text-black text-2xl rounded-sm p-1 pl-2" type="text" placeholder="W"> <span class="ml-4">cm</span>
+                      </div>
+                      <div>
+                        <p class="text-2xl">Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
                       </div>
                       <div class="card-actions justify-end">
                         <button onclick="calcolaterectangle()"  class="btn btn-primary w-full">Calculate</button>
@@ -50,22 +53,38 @@
                     </div>
                   </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/parallelogram.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">Parallelogram</h2>
+                      <p class="text-center">Area (A) = b       h</p>
+                      <div>
+                        <span>b=</span> <input id="Parallelogram-base" class="w-10 bg-gray-300" type="text"> <span>cm</span> <span>,</span>
+                        <span>h=</span> <input id="Parallelogram-hight" class="w-10 bg-gray-300" type="text"> <span>cm</span>
+                      </div>
+                      <div> 
+                        <p class="text-center">Area: <span id="area-ans">0</span> cm<sup>2</sup></p>
+                      </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="calcolateParallelogram()"  class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
                 <div class="card w-96 bg-base-100 shadow-xl">
-                    <figure><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" /></figure>
+                    <figure><img src="images/pentagon.png" alt="Shoes" /></figure>
                     <div class="card-body">
-                      <h2 class="card-title">Shoes!</h2>
-                      <p>If a dog chews shoes whose shoes does he choose?</p>
+                      <h2 class="card-title">pentagon</h2>
+                      <p>Area (A) =
+                        0.5     p
+                        b</p>
+                        <div>
+                          <span>P =</span> <input id="p-input" class="w-10 bg-gray-300" type="text"><span>cm</span> <span>,</span> 
+                          <span>b =</span> <input id="base-input" class="w-10 bg-gray-300" type="text"> <span>cm</span>
+                        </div>
+                        <div>
+                          <p class="text-center">Area: <span id="area-ans2">0</span> cm<sup>2</sup></p>
+                        </div>
                       <div class="card-actions justify-end">
-                        <button class="btn btn-primary">Buy Now</button>
+                        <button onclick="Pentagon()"  class="btn btn-primary w-full">Calculate</button>
                       </div>
                     </div>
                   </div>
@@ -77,5 +96,6 @@
     </main>
     <script src="js/traingle.js"></script>
     <script src="rectangle.js"></script>
+    <script src="Parallelogram.js"></script>
 </body>
 </html>
